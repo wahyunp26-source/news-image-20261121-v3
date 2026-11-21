@@ -1,0 +1,327 @@
+{
+ "briefs": [
+  "Kryvyi Rih: Double strike kills 2, injures 42 (Kyiv Indep.)",
+  "Copenhagen: Russian diplomat expelled over a plot (Al Jazeera)",
+  "Antalya: EU warns COP31 risks a “fossil summit” (AFP)",
+  "Antalya: Panama threatens to block the climate deal (Al Jazeera)",
+  "Antalya: Indonesia's PLN signs clean-power deals (Antara)",
+  "Yemen: Houthis threaten Jeddah and Red Sea ports (Al Jazeera)",
+  "Washington: Vance: Iran strikes were Trump's call (Reuters)",
+  "Washington: Lawmaker threatens SpaceX's funding (CNN)",
+  "Texas: Execution of a man of 70 takes 63 minutes (ABC)",
+  "Los Angeles: Jury convicts Palisades fire starter (ABC)",
+  "Missouri: Judge approves $7.25bn Roundup settlement (AFP)",
+  "Vancouver: Canada rests defence in youth climate trial (AFP)",
+  "Pyongyang: Kim tours factories after no Trump meeting (AFP)",
+  "Sejong: Freight train derails; no one hurt (Korea Herald)",
+  "Taipei: Budget and a cash payout are passed (Taipei Times)",
+  "Bangkok: Six-point plan on arsenic in two rivers (The Nation)",
+  "New Delhi: Pakistani minister joins SCO forum in India (Dawn)",
+  "Eastern India: Rain alerts as Akvan remnants move inland (ETV)",
+  "Myanmar: Rights groups urge sanctions after court ruling (AP)",
+  "Port Louis: African rating agency talks to 15 states (Al Jazeera)",
+  "Melbourne: Cummins keeps the Australian captaincy (ABC)",
+  "Las Vegas: Verstappen sent to stewards (Autosport)"
+ ],
+ "canvas": 1024,
+ "colors": {
+  "cream": [
+   247,
+   243,
+   232
+  ],
+  "grey": [
+   90,
+   90,
+   90
+  ],
+  "ink": [
+   26,
+   26,
+   26
+  ],
+  "mapdot": [
+   120,
+   110,
+   95
+  ],
+  "red": [
+   192,
+   0,
+   0
+  ]
+ },
+ "datecheck": "DATE CHECK — Left out as Friday 20 November's news: Wall Street's fall into a correction, the Russian barrage that hit Kyiv's bridges, the missile that landed in Poland, the UK–EU deal and Cyclone Akvan's landfall. Older still: Voyager 1's light-day (18 Nov). Not confirmed when drawn, so not shown: BepiColombo in Mercury orbit, a final COP31 text.",
+ "features": [
+  {
+   "body": "COP31 missed its Friday close. A draft with no mention of fossil fuels split nearly 200 countries; a third text is promised. (AFP, Al Jazeera)",
+   "head": "Climate summit runs into Saturday with no deal",
+   "key": "cop31",
+   "kicker": "COP31: OVERTIME",
+   "lat": 36.9,
+   "lon": 30.7,
+   "num": 1,
+   "source": "Ongoing · AFP, Al Jazeera",
+   "tag": "ANTALYA, TÜRKIYE · CLIMATE"
+  },
+  {
+   "body": "The Saudi-led coalition said three were destroyed over Riyadh before dawn and two over Jizan, a day after it bombed Hodeidah port. (AFP, Dawn)",
+   "head": "Five Houthi missiles shot down over Saudi Arabia",
+   "key": "saudi",
+   "kicker": "SAUDI: MISSILES",
+   "lat": 24.7,
+   "lon": 46.7,
+   "num": 2,
+   "source": "Coalition's count · AFP",
+   "tag": "RIYADH · JIZAN · WAR"
+  },
+  {
+   "body": "The deep quake near Carhuamayo was felt in Lima and along the coast. Eight were hurt, 128 homes hit; no deaths, no tsunami risk. (USGS, Indeci)",
+   "head": "Magnitude 6.7 earthquake shakes central Peru",
+   "key": "peru",
+   "kicker": "PERU: QUAKE 6.7",
+   "lat": -11.0,
+   "lon": -76.0,
+   "num": 3,
+   "source": "USGS · IGP",
+   "tag": "JUNÍN, PERU · EARTHQUAKE"
+  }
+ ],
+ "footer": "Every story here happened, or was first reported, on Saturday 21 November 2026. Officials' counts and claims are attributed. Sources named beside each story · original drawings",
+ "headline": "Saturday 21 November 2026",
+ "kicker_left": "THE WORLD IN ONE DAY",
+ "kicker_right": "35 STORIES · 7 REGIONS · EVERY ONE DATED SATURDAY 21 NOVEMBER 2026",
+ "map": {
+  "h": 96,
+  "rows": [
+   "..#####...###################..####..............####..####################.",
+   "..#############################...............######..####################..",
+   "...############################...............#######.####################..",
+   "......#######.################..###...........############.###############..",
+   "........#######.##############..###...........##############.##############.",
+   ".........########.##########....###...........###############.############..",
+   "..........######..#########.....###...........###############.###########...",
+   "...........######................#################.######..##########.......",
+   "............#####.................#######################..#######..........",
+   ".............#####.................##################..####..###............",
+   "..............#####................#################...###...##.............",
+   "...............#####...............###############....###....##.............",
+   "................#####..............############......###....................",
+   "....................#####..........#########.........##.....................",
+   "......................#######......#######..................................",
+   "........................#######....#####......########......................",
+   "..........................######...###........#########.....................",
+   "...........................####..............########.................##....",
+   "............................###...............######..................##....",
+   ".............................##............................................."
+  ],
+  "w": 380,
+  "x": 28,
+  "y": 852
+ },
+ "margin": 28,
+ "medium": [
+  {
+   "body": "He warns of double-tap strikes next.",
+   "head": "Zelensky: Crimea bridge “will not stay”",
+   "key": "kyiv",
+   "kicker": "KYIV: WARNING",
+   "lat": 50.4,
+   "lon": 30.5,
+   "num": 4,
+   "source": "Interview · NBC",
+   "tag": "KYIV · WAR"
+  },
+  {
+   "body": "No confirmation from Washington.",
+   "head": "Iran says it shot down a US drone",
+   "key": "hormuz",
+   "kicker": "HORMUZ: DRONE",
+   "lat": 26.5,
+   "lon": 56.5,
+   "num": 5,
+   "source": "Iran's claim · IRIB",
+   "tag": "STRAIT OF HORMUZ · WAR"
+  },
+  {
+   "body": "Minister still seeks a “fair solution”.",
+   "head": "Iran: uranium stock stays in the country",
+   "key": "iran",
+   "kicker": "IRAN: URANIUM",
+   "lat": 35.7,
+   "lon": 51.4,
+   "num": 6,
+   "source": "Statement · ToI",
+   "tag": "TEHRAN · DIPLOMACY"
+  },
+  {
+   "body": "“Tremendous penalty”, no details yet.",
+   "head": "Trump vows tax on data centres abroad",
+   "key": "trump",
+   "kicker": "TRUMP: AI TAX",
+   "lat": 38.9,
+   "lon": -77.0,
+   "num": 7,
+   "source": "Briefing · ABC",
+   "tag": "WASHINGTON · TECHNOLOGY"
+  },
+  {
+   "body": "Tokyo says its stance is unchanged.",
+   "head": "China tells Japan to “correct” Taiwan words",
+   "key": "chinajapan",
+   "kicker": "CHINA–JAPAN",
+   "lat": 39.9,
+   "lon": 116.4,
+   "num": 8,
+   "source": "Ministry · AFP",
+   "tag": "BEIJING · DIPLOMACY"
+  },
+  {
+   "body": "Air Niugini 767 diverts after midnight.",
+   "head": "Jet lands safely after engine-fire alert",
+   "key": "davao",
+   "kicker": "DAVAO: 146 SAFE",
+   "lat": 7.1,
+   "lon": 125.6,
+   "num": 9,
+   "source": "Airline · AP",
+   "tag": "DAVAO · AVIATION"
+  },
+  {
+   "body": "Albanese ends an 11-day trip.",
+   "head": "Australia and China agree to AI talks",
+   "key": "canberra",
+   "kicker": "CANBERRA: AI",
+   "lat": -35.3,
+   "lon": 149.1,
+   "num": 10,
+   "source": "Agreed · ABC",
+   "tag": "CANBERRA · DIPLOMACY"
+  },
+  {
+   "body": "Down 3.9% in 24 hours; ether $1,625.",
+   "head": "Bitcoin trades below $59,000 on Saturday",
+   "key": "bitcoin",
+   "kicker": "BITCOIN: $58,983",
+   "lat": 51.5,
+   "lon": -0.1,
+   "num": 11,
+   "source": "CoinGecko · 02:08 UTC",
+   "tag": "WORLD · MARKETS"
+  },
+  {
+   "body": "1:34.041 in a damp, messy session.",
+   "head": "Russell fastest in final Las Vegas practice",
+   "key": "f1",
+   "kicker": "RUSSELL: P1",
+   "lat": 36.2,
+   "lon": -115.1,
+   "num": 12,
+   "source": "Timing · Formula 1",
+   "tag": "LAS VEGAS · FORMULA 1"
+  },
+  {
+   "body": "India 486 for 4 at stumps, replying to 368.",
+   "head": "Rahul hits a century against New Zealand",
+   "key": "cricket",
+   "kicker": "RAHUL: 136",
+   "lat": -41.3,
+   "lon": 174.8,
+   "num": 13,
+   "source": "Day 3 · AFP",
+   "tag": "WELLINGTON · CRICKET"
+  }
+ ],
+ "regions": [
+  {
+   "color": [
+    31,
+    78,
+    121
+   ],
+   "n": 4,
+   "name": "Europe"
+  },
+  {
+   "color": [
+    192,
+    0,
+    0
+   ],
+   "n": 10,
+   "name": "Asia"
+  },
+  {
+   "color": [
+    191,
+    143,
+    0
+   ],
+   "n": 5,
+   "name": "Middle East"
+  },
+  {
+   "color": [
+    112,
+    48,
+    160
+   ],
+   "n": 1,
+   "name": "Africa"
+  },
+  {
+   "color": [
+    84,
+    130,
+    53
+   ],
+   "n": 11,
+   "name": "Americas"
+  },
+  {
+   "color": [
+    46,
+    117,
+    182
+   ],
+   "n": 3,
+   "name": "Oceania"
+  },
+  {
+   "color": [
+    89,
+    89,
+    89
+   ],
+   "n": 1,
+   "name": "Global"
+  }
+ ],
+ "stats": [
+  {
+   "big": "Day 13",
+   "cap": "of a COP31 summit planned to close on day 12"
+  },
+  {
+   "big": "5",
+   "cap": "missiles shot down over Riyadh and Jizan"
+  },
+  {
+   "big": "6.7",
+   "cap": "magnitude of the quake in Junín, Peru"
+  },
+  {
+   "big": "146",
+   "cap": "people safe after a jet's emergency landing"
+  },
+  {
+   "big": "$58,983",
+   "cap": "bitcoin early Saturday, down 3.9% in a day"
+  },
+  {
+   "big": "136",
+   "cap": "KL Rahul's score in Wellington"
+  }
+ ],
+ "subhead": "Climate summit runs past its deadline · Five missiles shot down over Saudi Arabia · Strong quake shakes Peru"
+}

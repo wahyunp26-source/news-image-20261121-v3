@@ -69,6 +69,23 @@ def fit_size(draw, text, path, start, width):
     return font(path, 10)
 
 
+def region_widths(counts, total_w, min_w=46):
+    """Integer widths summing to total_w: proportional to counts, with
+    narrow segments lifted to min_w at the widest segment's expense;
+    the last width absorbs rounding so the bar ends exactly at the
+    right margin. Must match main.py's segment drawing exactly."""
+    total = sum(counts)
+    widths = [total_w * c / total for c in counts]
+    widest = max(range(len(counts)), key=lambda i: counts[i])
+    for i, w in enumerate(widths):
+        if w < min_w:
+            widths[widest] -= min_w - w
+            widths[i] = min_w
+    ints = [int(round(w)) for w in widths[:-1]]
+    ints.append(total_w - sum(ints))
+    return ints
+
+
 def prep_image(key, tw, th):
     """Fit the whole illustration inside (tw, th): the side bars are the
     source's own edge columns stretched sideways, so they continue the
@@ -144,15 +161,24 @@ def main():
                    fill=INK + (255,), anchor="la")
             y += 12
 
-    # region bar labels (segments are drawn by main.py)
-    total = sum(r["n"] for r in lay["regions"])
+    # region bar labels (segments are drawn by main.py, same widths)
+    # "Middle East" is shortened to "Mid East" and the type is 9pt, so
+    # every label fits fully inside its own segment, including the two
+    # 1-story segments (lifted to 46px wide by region_widths).
+    widths = region_widths([r["n"] for r in lay["regions"]], W - 2 * M)
+    short = {"Middle East": "Mid East"}
     x = M
-    for r in lay["regions"]:
-        wseg = (W - 2 * M) * r["n"] / total
-        label = "%s %d" % (r["name"], r["n"])
-        d.text((x + wseg / 2, 228), label, font=font(SANS_B, 10),
+    for r, wseg in zip(lay["regions"], widths):
+        label = "%s %d" % (short.get(r["name"], r["name"]), r["n"])
+        fnt = font(SANS_B, 9)
+        lw = d.textlength(label, font=fnt)
+        assert x + 2 <= x + wseg / 2 - lw / 2 and \
+            x + wseg / 2 + lw / 2 <= x + wseg - 2, \
+            ("region label overflows its segment", label, wseg, lw)
+        d.text((x + wseg / 2, 228), label, font=fnt,
                fill=WHITE + (255,), anchor="ma")
         x += wseg
+    assert x == X1, ("region bar does not end at the right margin", x)
 
     def draw_card(story, x, y_img, iw, ih, tag_r, tag_px, head_px,
                   body_px, kick_px, src_px):

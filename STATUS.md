@@ -18,7 +18,7 @@
 
 - `entry.png`: 1024×1024 RGB PNG, 342,098 bytes (≤1 MiB), magic `89504e470d0a1a0a`.
 - `main.py`: Python stdlib only, written fresh in this session, revised once after the first visual review (stats-divider span, region-bar last segment to the exact right margin, white ring on map pins). No v2 code was read or copied.
-- Determinism: 3 consecutive runs of `main.py` produced identical sha256 `f06fcabe10652b68f5bce7644713f18be63b8d6731f918d5c487061f1c690469`.
+- Determinism: 3 consecutive runs of `main.py` produced identical sha256 `f06fcabe10652b68f5bce7644713f18be63b8d6731f918d5c487061f1c690469`. **Region-bar fix (21 Nov ~21:30 WIB, fix commit on top of fc043ea):** segments now use a shared `region_widths()` allocator (main.py + build.py) — proportional widths, but the two 1-story segments lifted to a 46px minimum at the widest segment's expense (widths [111, 277, 138, 46, 268, 83, 45] = 968); label "Middle East" shortened to "Mid East", type 10pt → 9pt, with a build-time assert that every label fits inside its segment (≥2px margin). New sha256 `b9cc354afccf387c0cc1ef148e96462408e07008cf5a93bcb689c897c828500e` (2 runs identical). "Global 1" now fully inside the right margin; "Mid East 5" / "Africa 1" no longer cramped. Counts unchanged (Europe 4, Asia 10, Middle East 5, Africa 1, Americas 11, Oceania 3, Global 1 = 35); nothing else touched. `makefun check` still 4 passed / 1 failed (transcripts_present, local-only) / 14 skipped.
 - 300px check: headline, stats strip and the 3 feature headlines remain readable at 300px wide.
 - Previews: `preview-top.png`, `preview-medium.png`, `preview-bottom.png` in the entry dir.
 

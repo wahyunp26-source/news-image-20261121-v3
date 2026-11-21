@@ -204,6 +204,23 @@ def draw_pin(canvas, cx, cy, num):
         draw_digit(canvas, x0 + i * 4, cy - 2, ch, (255, 255, 255))
 
 
+def region_widths(counts, total_w, min_w=46):
+    """Integer widths summing to total_w: proportional to counts, with
+    narrow segments lifted to min_w at the widest segment's expense;
+    the last width absorbs rounding so the bar ends exactly at the
+    right margin. Must match build.py's label layout exactly."""
+    total = sum(counts)
+    widths = [total_w * c / total for c in counts]
+    widest = max(range(len(counts)), key=lambda i: counts[i])
+    for i, w in enumerate(widths):
+        if w < min_w:
+            widths[widest] -= min_w - w
+            widths[i] = min_w
+    ints = [int(round(w)) for w in widths[:-1]]
+    ints.append(total_w - sum(ints))
+    return ints
+
+
 def build(lay):
     cv = Canvas(W, W, CREAM)
     assets = os.path.join(HERE, "assets")
@@ -220,15 +237,16 @@ def build(lay):
         x = int(MARGIN + i * colw)
         cv.rect(x, 156, 2, 54, RED)
 
-    # region bar: segments sized by story count; the last one runs
-    # exactly to the right margin so no cream sliver shows
-    total = sum(r["n"] for r in lay["regions"])
+    # region bar: segments sized by story count, but no segment narrower
+    # than 46px (the two 1-story segments would be ~28px, too narrow for
+    # their labels); the deficit comes off the widest segment, and the
+    # last segment runs exactly to the right margin so no cream sliver
+    # shows
+    widths = region_widths([r["n"] for r in lay["regions"]],
+                           RIGHT - MARGIN)
     x = MARGIN
     for j, r in enumerate(lay["regions"]):
-        if j == len(lay["regions"]) - 1:
-            wseg = RIGHT - x
-        else:
-            wseg = int(round((RIGHT - MARGIN) * r["n"] / total))
+        wseg = RIGHT - x if j == len(lay["regions"]) - 1 else widths[j]
         cv.rect(x, 218, wseg, 20, tuple(r["color"]))
         x += wseg
 

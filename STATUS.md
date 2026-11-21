@@ -3,7 +3,7 @@
 ## Repo
 
 - https://github.com/wahyunp26-source/news-image-20261121-v3
-- Commit: `0ea6d15` (first) — rebuilt files committed + pushed after final visual pass (see git log for the final sha)
+- Commit: `d61d935` (HEAD, pushed to main)
 - Branch: main, public. Homepage: https://make.fun/bounty/news-image-20261121. Topics: make-fun, news-image.
 - Entry dir: `~/workspace/makefun/news-image-20261121-v3-entry/`
 - `.makefun/owner.json` contains exactly `{"wallet":"wQUy3YoX5DoUSaAsXycrZT21NTih6BRwE6N4ossmy9S"}` (verified by cat).
